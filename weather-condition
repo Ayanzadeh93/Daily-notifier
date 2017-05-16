@@ -1,0 +1,88 @@
+if (msg.payload.weather === "Clear"  ) {
+msg.payload = msg.payload.description +"take your umbrella!."+ "humidity"+msg.payload.humidity+ "\n wind speed"+msg.payload.windspeed+"Km";
+  
+  
+  return msg;
+}
+else 
+if (msg.payload.weather === "Rainy") {
+
+  msg.payload = "take your umbrella, the weather is going to be rainy!";
+  return msg;
+}
+else 
+if (msg.payload.weather === "sun") {
+  msg.payload = "Dont forget your suglasses!";
+  return msg;
+
+}
+else 
+if (msg.payload.weather === "Clouds" && msg.payload.humidity>75 ) {
+  msg.payload = "the weather is cloudy and humıd";
+  return msg;
+}
+else 
+if (msg.payload.weather === "Clouds" && msg.payload.humidity<=70 ) {
+  msg.payload = "the weather is cloudy";
+  return msg;
+}
+else 
+if (msg.payload.weather === "light rain") {
+  msg.payload = "the weather is going to be rainy!";
+  return msg;
+}
+else 
+if (msg.payload.weather === "clear sky") {
+   msg.payload=msg.location;
+  msg.payload = "the weather is going to be rainy!";
+  return msg;
+}
+else 
+if (msg.payload.weather === "overcast clouds") {
+  msg.payload = "the weather is going to be rainy!";
+  return msg;
+}
+else 
+if (msg.payload.weather === "few clouds") {
+  msg.payload = "the weather is going to be rainy!";
+  return msg;
+}
+else
+
+if (msg.payload.weather === "moderate rain") {
+  msg.payload = "the weather is going to be rainy!";
+  return msg;
+}
+
+else
+
+if (msg.payload.weather === "Thunderstorm") {
+  msg.payload = "the weather is going to be rainy!";
+  return msg;
+}
+
+else
+
+if (msg.payload.weather === "Scattered clouds") {
+  msg.payload = "the weather is going !";
+  return msg;
+}
+
+
+
+else
+
+if (msg.payload.weather === "Broken clouds" && msg.payload.humidity>70) {
+  msg.payload = "the weather is so humid!";
+  return msg;
+}
+
+else
+
+if (msg.payload.weather === "Light intensity drizzle rain") {
+  msg.payload = "the weather is going to be rainy!";
+  return msg;
+}
+
+
+return null
